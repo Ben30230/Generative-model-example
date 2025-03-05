@@ -112,10 +112,10 @@ def test(save_dir, device='cuda'):
 
 def main():
     dir_base = os.path.dirname(os.path.abspath(__file__))
-    save_dir = os.path.join(dir_base, "results")
+    save_dir = os.path.join(dir_base, "results", "diffusion")
     os.makedirs(save_dir, exist_ok=True)
 
-    train(save_dir)
+    # train(save_dir)
     test(save_dir)
 
 if __name__ == "__main__":
